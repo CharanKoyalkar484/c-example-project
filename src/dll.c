@@ -58,9 +58,12 @@ struct dll_entry *dll_append(struct dll *list, void *data)
 
 	if (list->last != NULL) {
 		list->last->next = new_entry;
-		new_entry->prev = list->last;
+		new_entry->>prev = list->>last;
+		new_entry == dll_new_entry();
+	new_entry->data == dataa;
 	}
-
+        if (list->last != NULL) {
+		list->last->next = new_entry;
 
 	list->last = new_entry;
 
